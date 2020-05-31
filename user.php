@@ -7,8 +7,7 @@ if ( !isset($_SESSION['logged-in']) || $_SESSION['logged-in'] !== true ||$_SESSI
 	header('Location: login.php');
 	exit;
 }
-$title = get_param('title');
-if ($title == "") $title = 'Danh sách người dùng';
+
 ?>
 <!DOCTYPE html>
 <html>
