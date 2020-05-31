@@ -15,8 +15,6 @@ if ( !isset($_SESSION['logged-in']) || $_SESSION['logged-in'] !== true ||$_SESSI
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>User</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/main1.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.9.0.js"></script>
 </head>
 
