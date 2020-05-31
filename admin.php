@@ -58,12 +58,9 @@ if ($title == "") $title = 'Danh sách người dùng';
                             <a class="dropdown-item" href="/ud/app/love/">Love</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.php">Login</a>
-                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <a href="login.php" style="float:right">Logout</a>
+                    <a href="logout.php" style="float:right">Logout</a>
                 </form>
             </div>
         </nav>
