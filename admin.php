@@ -55,6 +55,9 @@ if ( !isset($_SESSION['logged-in']) || $_SESSION['logged-in'] !== true ||$_SESSI
                             <a class="dropdown-item" href="/ud/app/love/">Love</a>
                         </div>
                     </li>
+                    <li class="nav-item register">
+                        <a class="nav-link" href="register.php">Add User</a>
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <a href="logout.php?token=<?= $_SESSION['token']; ?>" style="float:right">Logout</a>
