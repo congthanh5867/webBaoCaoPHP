@@ -57,7 +57,7 @@ if ( !isset($_SESSION['logged-in']) || $_SESSION['logged-in'] !== true ||$_SESSI
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <a href="logout.php" style="float:right">Logout</a>
+                    <a href="logout.php?token=<?= $_SESSION['token']; ?>" style="float:right">Logout</a>
                 </form>
             </div>
         </nav>
