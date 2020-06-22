@@ -86,9 +86,9 @@ if ($submit <> "") {
         <!--Form đăng nhập-->
         <h2>Form Login</h2>
         <form action="#" method="post">
-            <!-- start csrf -->
+            <!--  csrf -->
             <input type="hidden" name="csrf" value="<?php echo $_SESSION["token"]; ?>">
-            <!-- end csrf -->
+            <!--  csrf -->
             <input type="text" Name="ma_nhan_vien" placeholder="Name" required="">
             <input type="password" Name="mat_khau" placeholder="PASSWORD" required="">
             <div class="aitssendbuttonw3ls">

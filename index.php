@@ -1,7 +1,16 @@
 <?php
-    include("include/header.php")
+    include("include/header.php");
+    include("include/function.php");
+    // $Search = get_param('search');
+    $submit = get_param('submit');
+    if ($submit <> "") {
+        if(preg_match('/^[a-z]+$/', get_param('search'), $Search)){
+            echo "<script type='text/javascript'>alert(".json_encode($Search).");</script>";
+        }else {
+            echo '<script language="javascript">alert("mời bạn nhập đúng kí tự ");</script>';
+        }
+    }
 ?>
-
 <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
     <img src="img/avatar.jpg" alt="" id="avatar">
     <!-- <a class="navbar-brand" href="#"><img src="img/avatar.jpg" alt="" id="avatar"></a> -->
@@ -35,9 +44,10 @@
                 <a class="nav-link" href="login.php">Login</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline my-2 my-lg-0" action="#" method="post">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" >
+            <input class="btn btn-outline-info my-2 my-sm-0" type="submit" name="submit">
+            <!-- <button class="btn btn-info" onclick=alert() > Search</button> -->
         </form>
     </div>
 </nav>

@@ -39,7 +39,7 @@
             }
         });
     </script>
-    <script src="../assets/js/click.js"></script>
+    <!-- <script src="../assets/js/click.js"></script> -->
 </head>
 
 <body>
@@ -47,8 +47,11 @@
         <div class="container">
             <div class="img-container">
                 <div class="inner-container">
-                    <h1>Công thành </h1>
+                    <!-- <h1>Công thành </h1> -->
                     <h2>Wellcome to Website</h2>
                     <a href="/webTTa" class="btn">Click Here</a>
                 </div>
             </div>
+        </div>
+    </div>
+</body>
